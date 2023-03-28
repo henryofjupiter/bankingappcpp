@@ -6,6 +6,7 @@
 #added by Henry
 .idea/
 CMakeLists.txt
+.DS_Store
 ##
 
 # Prerequisites
