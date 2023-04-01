@@ -32,9 +32,10 @@ public:
     //member functions
     static double totalSum(double initialInvestment, double deposit);
     double interest();
-    //void displayFormat1();
+    void displayFormat1();
     void displayFormat2();
     void menuInput();
+    void headerFormat();
 
 };
 
