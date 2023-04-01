@@ -4,6 +4,7 @@
 
 #ifndef BANKINGAPPCPP_USERINVESTMENT_H
 #define BANKINGAPPCPP_USERINVESTMENT_H
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -18,19 +19,21 @@ private:
 public:
     // access member functions
     string GetUserName();
-    void SetUserName();
+    void SetUserName(string userName);
     unsigned int GetInitialInvestAmt();
     void SetInitialInvestAmt();
     unsigned int GetMonthlyDeposit();
     void SetMonthlyDeposit();
     unsigned int GetAnnualInterest();
-    void SetAnnualInterst();
+    void SetAnnualInterest();
     unsigned int GetNumYears();
-    void SetNumYears();
+    void SetNumYears(int years);
 
     //member functions
-    unsigned int totalSum();
-    void displayFormat();
+    static double totalSum(double initialInvestment, double deposit);
+    double interest();
+    //void displayFormat1();
+    void displayFormat2();
     void menuInput();
 
 };
