@@ -11,10 +11,10 @@ using namespace std;
 class UserInvestment {
 private:
     string userName;
-    unsigned int initialInvestAmt;
-    unsigned int monthlyDeposit;
-    unsigned int annualInterest;
-    unsigned int numYears;
+    double initialInvestAmt;
+    double monthlyDeposit;
+    double annualInterest;
+    int numYears;
 
 public:
     // access member functions
@@ -31,11 +31,11 @@ public:
 
     //member functions
     static double totalSum(double initialInvestment, double deposit);
-    double interest();
-    void displayFormat1();
+    void interest();
+    static void displayFormat1();
     void displayFormat2();
     void menuInput();
-    void headerFormat();
+    static void headerFormat();
 
 };
 
