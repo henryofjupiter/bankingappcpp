@@ -31,7 +31,7 @@ public:
 
     //member functions
     static double totalSum(double initialInvestment, double deposit);
-    void interest();
+    void interest(double opening, double monthly, double interest, int years);
     static void displayFormat1();
     void displayFormat2();
     void menuInput();
