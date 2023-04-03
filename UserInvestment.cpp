@@ -6,10 +6,6 @@
 #include <iomanip>
 #include <string>
 
-string UserInvestment::GetUserName() {
-    return userName;
-}
-
 // format string spaces for output
 string formatSpaces(int size, char c) {
     string newString;
@@ -46,11 +42,11 @@ void UserInvestment::headerFormat() {
     cout << formatSpaces(10, '*')  << " Data Input " << formatSpaces(10, '*') << endl;
 }
 
-//main menu for userinput
+//main menu for user input
 void UserInvestment::menuInput() {
     headerFormat();     //for displaying header
     cout << "Enter your name: ";
-    cin >> userName;
+    getline(cin, userName);
     cout << "Initial Investment Amount: ";
     cin >> initialInvestAmt;
     cout << "Monthly Deposit: ";
@@ -66,7 +62,7 @@ void UserInvestment::menuInput() {
 
 // calculates both end of year interest and balance, given a number of years from input.
 void UserInvestment::interest(double opening, double monthly, double interest, int years) {
-  double sumOfInterest2, sumOfInterest = 0, total = 0, newInterest, balance = opening;
+  double sumOfInterest2, sumOfInterest = 0, total, newInterest, balance = opening;
 
     for (int i = 1; i <= years; ++i){   // calculates interest and balance per year
         sumOfInterest2 = sumOfInterest; // assigns sum of interest from the past year.

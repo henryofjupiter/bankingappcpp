@@ -18,7 +18,7 @@ private:
 
 public:
     //member functions
-    string GetUserName();
+    string printName() { return userName;}; //prints user name to console
     void interest(double opening, double monthly, double interest, int years);
     void displayFormat1();
     void displayFormat2();
