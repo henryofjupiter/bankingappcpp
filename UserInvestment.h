@@ -19,20 +19,11 @@ private:
 public:
     // access member functions
     string GetUserName();
-    void SetUserName(string userName);
-    unsigned int GetInitialInvestAmt();
-    void SetInitialInvestAmt();
-    unsigned int GetMonthlyDeposit();
-    void SetMonthlyDeposit();
-    unsigned int GetAnnualInterest();
-    void SetAnnualInterest();
-    unsigned int GetNumYears();
-    void SetNumYears(int years);
 
     //member functions
     static double totalSum(double initialInvestment, double deposit);
     void interest(double opening, double monthly, double interest, int years);
-    static void displayFormat1();
+    void displayFormat1();
     void displayFormat2();
     void menuInput();
     static void headerFormat();
