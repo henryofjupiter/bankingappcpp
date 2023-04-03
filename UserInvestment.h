@@ -17,11 +17,8 @@ private:
     int numYears;
 
 public:
-    // access member functions
-    string GetUserName();
-
     //member functions
-    static double totalSum(double initialInvestment, double deposit);
+    string GetUserName();
     void interest(double opening, double monthly, double interest, int years);
     void displayFormat1();
     void displayFormat2();
